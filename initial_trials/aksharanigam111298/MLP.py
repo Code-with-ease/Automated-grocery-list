@@ -13,7 +13,7 @@ y = array[:,1]
 
 model = MLPClassifier(hidden_layer_sizes=(15,13,12) , max_iter=500 )
 
-xtrain, xtest, ytrain , ytest = train_test_split(x,y, random_state=7,test_size=0.5 )
+xtrain, xtest, ytrain , ytest = train_test_split(x,y, random_state=0,test_size=0.70 )
 
 kfold = KFold(n_splits=5)
 score = cross_val_score(model , x,y,cv=kfold)
