@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split,KFold, cross_val_score
 import warnings
 warnings.filterwarnings(action="ignore")
 
-df = pd.read_csv('smart_list.csv')
+df = pd.read_csv('check.csv')
 print(df.shape)
 array = df.values
 print(array)
