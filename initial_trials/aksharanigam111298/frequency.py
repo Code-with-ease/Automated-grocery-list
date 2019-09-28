@@ -19,7 +19,7 @@ def testing(x,y,trained,days):
 
     return np.mean(err)
 
-def main():
+if __name__ == "__main__":
     df = pd.read_csv('smart_list.csv')
     print(df.shape)
     array = df.values
@@ -40,7 +40,7 @@ def main():
 
         err = testing(xtest , ytest , trained , days)
 
-        print("%.3f  %.3f "%(trained , err))
+        print("%.3f , %.3f "%(trained , err))
 
     else:
         ctr= 0
@@ -64,4 +64,3 @@ def main():
 
         print("%.3f , %.3f"%(total_trained , total_err/ctr))
 
-main()
