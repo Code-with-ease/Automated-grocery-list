@@ -20,7 +20,7 @@ def testing(x,y,trained,days):
     return np.mean(err)
 
 def main():
-    df = pd.read_csv('check.csv')
+    df = pd.read_csv('smart_list.csv')
     print(df.shape)
     array = df.values
 
