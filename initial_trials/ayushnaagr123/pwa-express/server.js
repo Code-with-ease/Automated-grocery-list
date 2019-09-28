@@ -1,39 +1,39 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 const fs = require('fs')
-
+const loki = require('lokijs');
+var users;
 const app = express();
- 
+var db;
+function loadHandler() {
+  console.log('hello')
+  // const db = new loki('test.json', {autoload: true, autoloadCallback: loadHandler});
+  users = db.getCollection('test');
+  if (!users) {
+    console.log('new')
+    users=db.addCollection('test');
+  }
+  db.saveDatabase()
+}
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 app.get('/api/customers', (req, res) => {
   var customers;
-  fs.readFile('customers.json',(err,data)=>{
-    if(err) throw err;
-    customers=JSON.parse(data);
-    customers=JSON.stringify(customers)
-  });
+  var customers = users;
   res.json(customers);
 });
 
 app.post('/api/addCustomer',(req,res)=>{
+  console.log(req.body)
   var fname = req.body.fname
   var lname = req.body.lname
-  var customers;
-  fs.readFile('customers.json',(err,data)=>{
-    if(err) throw err;
-    customers=JSON.parse(data);
-    id=customers.length
-    customers.push({id:id+1,firstName:fname,lastName:lname})
-
-    console.log(customers)
-  })
-  setTimeout(()=>{
-    fs.writeFile('customers.json','',(err)=>{
-      if(err) throw err;
-    }),300});
-    customers.forEach(element => {
-    fs.appendFile('customers.json',JSON.stringify(element),(err)=>{
-      if(err) throw err;
-    })});
-  });
+  // var db = new loki('test.json', {autoload: true, autoloadCallback: loadHandler});
+  users.insert({ firstName: fname, lastName: lname});
+  console.log(users.data)
+  db.saveDatabase()
+  res.redirect('/')
+})
 
 if(process.env.NODE_ENV == 'production'){
   app.use(express.static('client/build'))
@@ -44,4 +44,9 @@ if(process.env.NODE_ENV == 'production'){
 
 const port = process.env.PORT||5000;
 
-app.listen(port, () => `Server running on port ${port}`);
+app.listen(port, () =>{
+   console.log(`Server running on port ${port}`);
+   db = new loki('test.json', {autoload: true, autoloadCallback: loadHandler});
+  //  users = db.addCollection("customers");
+  //  users.chain().remove()
+});
