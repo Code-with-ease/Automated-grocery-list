@@ -27,21 +27,20 @@ def main():
     x = array[:,0:1]
     y = array[:,1]
 
-    # Splitting the data to 75% training and 25% testing
-    # 75% of 5000 = 3750
+    # Splitting the data t 67% training and 33% testing
 
-    xtrain , xtest , ytrain , ytest = train_test_split(x , y , test_size=0.25 , random_state=50 , shuffle=False)
+    xtrain , xtest , ytrain , ytest = train_test_split(x , y , test_size=0.33 , shuffle=False )
 
     total_err = 0
     total_trained = 0
-    days = 14
+    days = 21
 
     if(days<=15):
         trained = training(xtrain , ytrain , days)
 
         err = testing(xtest , ytest , trained , days)
 
-        print("%.3f , %.3f "%(trained , err))
+        print("%.3f  %.3f "%(trained , err))
 
     else:
         ctr= 0
