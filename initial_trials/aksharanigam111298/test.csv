@@ -1,0 +1,4 @@
+add_logentry2,model,name,change_logentry1,content_type,change_logentry2,delete_logentry1,add_logentry1,pk,delete_logentry2
+2,auth.permission,Can add log entry,,8,,,1,22,
+,auth.permission,Can change log entry,1,8,2,,,23,
+,auth.permission,Can delete log entry,,8,,1,,24,2
