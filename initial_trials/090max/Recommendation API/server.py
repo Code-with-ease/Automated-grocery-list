@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,request
+from flask import Flask,request
 import pandas as pd
 import numpy as np
 import time
@@ -10,10 +10,10 @@ import json
 
 app=Flask(__name__)
 
-def create_data_dummy(data):
-    data_dummy = data.copy()
-    data_dummy['purchase_dummy'] = 1
-    return data_dummy
+# def create_data_dummy(data):
+#     data_dummy = data.copy()
+#     data_dummy['purchase_dummy'] = 1
+#     return data_dummy
 
 def split_data(data):
     '''
@@ -31,7 +31,8 @@ def split_data(data):
     test_data = tc.SFrame(test)
     return train_data, test_data
 
-def model(train_data,name,user_id,item_id,target,users_to_recommend,n_rec,n_display):
+
+def model(train_data,name,user_id,item_id,target,users_to_recommend,n_rec,n_display,training_pupose=1):
     if name=='popularity':
         model=tc.popularity_recommender.create(train_data,user_id=user_id,item_id=item_id,target=target)
     elif name=='cosine':
@@ -40,7 +41,10 @@ def model(train_data,name,user_id,item_id,target,users_to_recommend,n_rec,n_disp
         model = tc.item_similarity_recommender.create(train_data,user_id=user_id,  item_id=item_id,  target=target,similarity_type='pearson')
     recom = model.recommend(users=users_to_recommend, k=n_rec)
     recom.print_rows(n_display)
-    return model
+    if(training_pupose):
+        return model
+    else:  
+        return recom
 
 @app.route('/recommend',methods=['GET'])
 def recommned():
@@ -64,7 +68,7 @@ def recommned():
     data['productId']=data['productId'].astype(np.int64)
 
 
-    data_dummy = create_data_dummy(data)
+    # data_dummy = create_data_dummy(data)
 
     df_matrix = pd.pivot_table(data, values='purchase_count', index='customerId', columns='productId')
 
@@ -77,7 +81,6 @@ def recommned():
     data_norm = pd.melt(d, id_vars=['customerId'], value_name='scaled_purchase_freq').dropna()
     
     train_data, test_data = split_data(data)
-    train_data_dummy, test_data_dummy = split_data(data_dummy)
     train_data_norm, test_data_norm = split_data(data_norm)
 
 # constant variables to define field names include:
@@ -87,24 +90,21 @@ def recommned():
     n_rec = 10 # number of items to recommend
     n_display = 30 # to display the first few rows in an output dataset
 
+    
+    name='cosine'
+    target='scaled_purchase_freq'
+    final_model = model(tc.SFrame(data_norm),name,user_id, item_id,target,users_to_recommend,n_rec,n_display,0)
 
-    final_model = tc.item_similarity_recommender.create(tc.SFrame(data_norm),user_id=user_id, item_id=item_id,target='scaled_purchase_freq', similarity_type='cosine')
-
-    recom = final_model.recommend(users=users_to_recommend, k=n_rec)
-    recom.print_rows(n_display)
-
+    print(final_model)
 
     json_output=[]
-    for i in recom:
-        json_output.append(i)
+    for i in final_model:
+        if(i['score']!=0):
+            json_output.append(i)
 
 
     final_output=json.dumps(json_output)
     return final_output
-
-
-
-
 
 
 if __name__=='__main__':
