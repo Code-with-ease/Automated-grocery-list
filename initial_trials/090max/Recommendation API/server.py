@@ -106,6 +106,8 @@ def recommned():
     final_output=json.dumps(json_output)
     return final_output
 
-
+@app.route('/insert/<cust_id>',methods=['POST'])
+def show(cust_id):
+    return(cust_id)
 if __name__=='__main__':
     app.run(debug=True)
