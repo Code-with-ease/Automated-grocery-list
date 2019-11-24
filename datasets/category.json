@@ -1,0 +1,338 @@
+[
+    {
+        "category_id": "1",
+        "category_name": "PC - Headsets / Headphones"
+    },
+    {
+        "category_id": "2",
+        "category_name": "Accessories - PS2"
+    },
+    {
+        "category_id": "3",
+        "category_name": "Accessories - PS3"
+    },
+    {
+        "category_id": "4",
+        "category_name": "Accessories - PS4"
+    },
+    {
+        "category_id": "5",
+        "category_name": "Accessories - PSP"
+    },
+    {
+        "category_id": "6",
+        "category_name": "Accessories - PSVita"
+    },
+    {
+        "category_id": "7",
+        "category_name": "Accessories - XBOX 360"
+    },
+    {
+        "category_id": "8",
+        "category_name": "Accessories - XBOX ONE"
+    },
+    {
+        "category_id": "9",
+        "category_name": "Tickets (digits)"
+    },
+    {
+        "category_id": "10",
+        "category_name": "Delivery of goods"
+    },
+    {
+        "category_id": "11",
+        "category_name": "Game consoles - PS2"
+    },
+    {
+        "category_id": "12",
+        "category_name": "Game consoles - PS3"
+    },
+    {
+        "category_id": "13",
+        "category_name": "Game consoles - PS4"
+    },
+    {
+        "category_id": "14",
+        "category_name": "Game consoles - PSP"
+    },
+    {
+        "category_id": "15",
+        "category_name": "Game consoles - PSVita"
+    },
+    {
+        "category_id": "16",
+        "category_name": "Game consoles - XBOX 360"
+    },
+    {
+        "category_id": "17",
+        "category_name": "Game consoles - XBOX ONE"
+    },
+    {
+        "category_id": "18",
+        "category_name": "Game consoles - Other"
+    },
+    {
+        "category_id": "19",
+        "category_name": "Games - PS2"
+    },
+    {
+        "category_id": "20",
+        "category_name": "Games - PS3"
+    },
+    {
+        "category_id": "21",
+        "category_name": "Games - PS4"
+    },
+    {
+        "category_id": "22",
+        "category_name": "Games - PSP"
+    },
+    {
+        "category_id": "23",
+        "category_name": "Games - PSVita"
+    },
+    {
+        "category_id": "24",
+        "category_name": "Games - XBOX 360"
+    },
+    {
+        "category_id": "25",
+        "category_name": "Games - XBOX ONE"
+    },
+    {
+        "category_id": "26",
+        "category_name": "Games - Accessories for games"
+    },
+    {
+        "category_id": "27",
+        "category_name": "Games Android - Digital"
+    },
+    {
+        "category_id": "28",
+        "category_name": "Games MAC - Digital"
+    },
+    {
+        "category_id": "29",
+        "category_name": "Games PC - Additional publications"
+    },
+    {
+        "category_id": "30",
+        "category_name": "Games PC - Collector's Edition"
+    },
+    {
+        "category_id": "31",
+        "category_name": "Games PC - Standard Edition"
+    },
+    {
+        "category_id": "32",
+        "category_name": "Games PC - Digital"
+    },
+    {
+        "category_id": "33",
+        "category_name": "Payment card (Movies, Music, Games)"
+    },
+    {
+        "category_id": "34",
+        "category_name": "Payment cards - Live!"
+    },
+    {
+        "category_id": "35",
+        "category_name": "Payment cards - Live! (Numeral)"
+    },
+    {
+        "category_id": "36",
+        "category_name": "Payment cards - PSN"
+    },
+    {
+        "category_id": "37",
+        "category_name": "Payment card - Windows (figure)"
+    },
+    {
+        "category_id": "38",
+        "category_name": "Movies - Blu-Ray"
+    },
+    {
+        "category_id": "39",
+        "category_name": "The Movie - Blu-Ray 3D"
+    },
+    {
+        "category_id": "40",
+        "category_name": "Cinema - Blu-Ray 4K"
+    },
+    {
+        "category_id": "41",
+        "category_name": "Movies - DVD"
+    },
+    {
+        "category_id": "42",
+        "category_name": "Cinema - Collector"
+    },
+    {
+        "category_id": "43",
+        "category_name": "Books - artbook, encyclopedia"
+    },
+    {
+        "category_id": "44",
+        "category_name": "Books - Audiobooks"
+    },
+    {
+        "category_id": "45",
+        "category_name": "Books - Audiobooks (figure)"
+    },
+    {
+        "category_id": "46",
+        "category_name": "Books - Audiobooks 1C"
+    },
+    {
+        "category_id": "47",
+        "category_name": "Books - Business Books"
+    },
+    {
+        "category_id": "48",
+        "category_name": "Books - Comics, Manga"
+    },
+    {
+        "category_id": "49",
+        "category_name": "Books - Computer Books"
+    },
+    {
+        "category_id": "50",
+        "category_name": "Books - Methodical materials 1C"
+    },
+    {
+        "category_id": "51",
+        "category_name": "Books - Postcards"
+    },
+    {
+        "category_id": "52",
+        "category_name": "Books - Informative literature"
+    },
+    {
+        "category_id": "53",
+        "category_name": "Books - Guides"
+    },
+    {
+        "category_id": "54",
+        "category_name": "Books - Fiction"
+    },
+    {
+        "category_id": "55",
+        "category_name": "Books - Digital"
+    },
+    {
+        "category_id": "56",
+        "category_name": "Music - CD of local production"
+    },
+    {
+        "category_id": "57",
+        "category_name": "Music - CD production firm"
+    },
+    {
+        "category_id": "58",
+        "category_name": "Music - MP3"
+    },
+    {
+        "category_id": "59",
+        "category_name": "Music - Vinyl"
+    },
+    {
+        "category_id": "60",
+        "category_name": "Music - Music video"
+    },
+    {
+        "category_id": "61",
+        "category_name": "Music - Gift Edition"
+    },
+    {
+        "category_id": "62",
+        "category_name": "Gifts - Attributes"
+    },
+    {
+        "category_id": "63",
+        "category_name": "Gifts - gadgets, robots, sports"
+    },
+    {
+        "category_id": "64",
+        "category_name": "Gifts - Soft Toys"
+    },
+    {
+        "category_id": "65",
+        "category_name": "Gifts - Board Games"
+    },
+    {
+        "category_id": "66",
+        "category_name": "Gifts - Games (compact)"
+    },
+    {
+        "category_id": "67",
+        "category_name": "Gifts - Cards, Stickers"
+    },
+    {
+        "category_id": "68",
+        "category_name": "Gifts - Development"
+    },
+    {
+        "category_id": "69",
+        "category_name": "Gifts - certificates, services"
+    },
+    {
+        "category_id": "70",
+        "category_name": "Gifts - Souvenirs"
+    },
+    {
+        "category_id": "71",
+        "category_name": "Gifts - Souvenirs (weighed in)"
+    },
+    {
+        "category_id": "72",
+        "category_name": "Gifts - Bags, Albums, Mats d / mouse"
+    },
+    {
+        "category_id": "73",
+        "category_name": "Gifts - Figures"
+    },
+    {
+        "category_id": "74",
+        "category_name": "Program - 1C: Enterprise 8"
+    },
+    {
+        "category_id": "75",
+        "category_name": "Program - MAC (figure)"
+    },
+    {
+        "category_id": "76",
+        "category_name": "Program - For home and office"
+    },
+    {
+        "category_id": "77",
+        "category_name": "Program - Home & Office (Digital)"
+    },
+    {
+        "category_id": "78",
+        "category_name": "Program - Educational"
+    },
+    {
+        "category_id": "79",
+        "category_name": "Programs - Educational (figure)"
+    },
+    {
+        "category_id": "80",
+        "category_name": "System Tools"
+    },
+    {
+        "category_id": "81",
+        "category_name": "Utilities - Tickets"
+    },
+    {
+        "category_id": "82",
+        "category_name": "Net carriers (spire)"
+    },
+    {
+        "category_id": "83",
+        "category_name": "Net carriers (piece)"
+    },
+    {
+        "category_id": "84",
+        "category_name": "batteries"
+    }
+]
