@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Smart-List-React/static/css/main.d719ee3d.chunk.css",
+    "main.js": "/Smart-List-React/static/js/main.c8e86e03.chunk.js",
+    "main.js.map": "/Smart-List-React/static/js/main.c8e86e03.chunk.js.map",
+    "runtime-main.js": "/Smart-List-React/static/js/runtime-main.d9aa55fa.js",
+    "runtime-main.js.map": "/Smart-List-React/static/js/runtime-main.d9aa55fa.js.map",
+    "static/js/2.332c90e5.chunk.js": "/Smart-List-React/static/js/2.332c90e5.chunk.js",
+    "static/js/2.332c90e5.chunk.js.map": "/Smart-List-React/static/js/2.332c90e5.chunk.js.map",
+    "index.html": "/Smart-List-React/index.html",
+    "precache-manifest.b14ff0e259c472baa04f535f9fa253a8.js": "/Smart-List-React/precache-manifest.b14ff0e259c472baa04f535f9fa253a8.js",
+    "service-worker.js": "/Smart-List-React/service-worker.js",
+    "static/css/main.d719ee3d.chunk.css.map": "/Smart-List-React/static/css/main.d719ee3d.chunk.css.map"
+  }
+}
