@@ -88,4 +88,7 @@ for i in output_data:
         "cust_id":i["cust_id"],
         "Transaction":i["transactions"]
     })
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53fe2a31b8692972f5453ee73e25a5da7e4d632a

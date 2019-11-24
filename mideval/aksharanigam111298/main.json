@@ -1,0 +1,29 @@
+[
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": {"add_logentry1" : 1 , "add_logentry2": 2},
+            "name": "Can add log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": {"change_logentry1" : 1 , "change_logentry2": 2},
+            "name": "Can change log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": {"delete_logentry1" : 1 , "delete_logentry2": 2},
+            "name": "Can delete log entry",
+            "content_type": 8
+        }
+    }
+]
