@@ -1,0 +1,3 @@
+[submodule "Grocery-list-Frontend"]
+	path = Grocery-list-Frontend
+	url = https://github.com/Code-with-ease/Grocery-list-Frontend.git
